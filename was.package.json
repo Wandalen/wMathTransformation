@@ -2,7 +2,7 @@
   "name" : "wmathtransformation",
   "version" : "0.3.13",
   "description" : "___",
-  "author" : "Kostiantyn Wandalen <wanalen@willbe.so>",
+  "author" : "Kostiantyn Wandalen <wanalen@01.school>",
   "license" : "MIT",
   "main" : "proto/dwtools/___",
   "files" : [ "proto/dwtools/___", "proto/dwtools/Tools.s" ],
