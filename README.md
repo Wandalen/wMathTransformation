@@ -1,5 +1,5 @@
 
-# wMathTransformation -- Experimental! [![Build Status](https://travis-ci.org/Wandalen/wMathTransformation.svg?branch=master)](https://travis-ci.org/Wandalen/wMathTransformation)
+# wMathTransformation -- Experimental! [![Status](https://github.com/Wandalen/wMathTransformation/workflows/Test/badge.svg)](https://github.com/Wandalen/wMathTransformation}/actions?query=workflow%3ATest)
 
 ___
 
