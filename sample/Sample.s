@@ -3,5 +3,5 @@ let _ = require( 'wmathtransformation' );
 
 /**/
 
-___
+console.log( '___ not implemented ___' );
 
