@@ -1,1 +1,22 @@
-{"name":"wmathtransformation","version":"0.3.30","description":"___","author":"Kostiantyn Wandalen <wanalen@01.school>","license":"MIT","main":"proto/wtools/Tools.s","files":["proto/wtools/___","proto/wtools/Tools.s"],"scripts":{"test":"wtest .run 'proto/**' rapidity:-3","docgen":"wdocgen .build proto"},"repository":{"type":"git","url":"https ://github.com/Wandalen/wMathTransformation.git"},"bugs":{"url":"https ://github.com/Wandalen/wMathTransformation/issues"},"dependencies":{"wTools":""},"devDependencies":{"wTesting":"","wmathtransformation":"file:."},"keywords":["wTools"]}
+{
+  "name" : "wmathtransformation",
+  "version" : "0.3.31",
+  "description" : "___",
+  "author" : "Kostiantyn Wandalen <wanalen@01.school>",
+  "license" : "MIT",
+  "main" : "proto/wtools/Tools.s",
+  "files" : [ "proto/wtools/___", "proto/wtools/Tools.s" ],
+  "scripts" : { "test" : "wtest .run 'proto/**' rapidity:-3", "docgen" : "wdocgen .build proto" },
+  "repository" :
+  {
+    "type" : "git",
+    "url" : "https ://github.com/Wandalen/wMathTransformation.git"
+  },
+  "bugs" :
+  {
+    "url" : "https ://github.com/Wandalen/wMathTransformation/issues"
+  },
+  "dependencies" : { "wTools" : "" },
+  "devDependencies" : { "wTesting" : "", "wmathtransformation" : "file:." },
+  "keywords" : [ "wTools" ]
+}
