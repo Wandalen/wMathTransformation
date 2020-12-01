@@ -17,6 +17,6 @@
     "url" : "https ://github.com/Wandalen/wMathTransformation/issues"
   },
   "dependencies" : { "wTools" : "" },
-  "devDependencies" : { "wTesting" : "", "wmathtransformation" : "file:." },
+  "devDependencies" : { "wTesting" : "", "wmathtransformation" : "file:.", "eslint" : "7.1.0" },
   "keywords" : [ "wTools" ]
 }
