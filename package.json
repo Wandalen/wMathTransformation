@@ -1,6 +1,6 @@
 {
   "name" : "wmathtransformation",
-  "version" : "0.3.45",
+  "version" : "0.3.46",
   "description" : "___",
   "author" : "Kostiantyn Wandalen <wanalen@01.school>",
   "license" : "MIT",
@@ -17,6 +17,6 @@
     "url" : "https ://github.com/Wandalen/wMathTransformation/issues"
   },
   "dependencies" : { "wTools" : "alpha" },
-  "devDependencies" : { "wmathtransformation" : "file:.", "wTesting" : "alpha" },
+  "devDependencies" : { "wmathtransformation" : "file:.", "eslint" : "7.1.0", "wTesting" : "alpha" },
   "keywords" : [ "wTools" ]
 }
