@@ -2,15 +2,12 @@ format: outwillfile-2.0
 root:
   - wMathTransformation.out
 consistency:
-  wMathTransformation.out.will.yml: &ref_0
-    hash: 0443e1e19876d10d1674aebf29e5711d
-    size: 37092
-  ../.ex.will.yml: &ref_1
+  ../.ex.will.yml: &ref_0
     hash: 44574774092fe505ab2ee53f354db5c2
     size: 1727
-  ../.im.will.yml: &ref_2
-    hash: 41e8fdb262ab8ce24c3a02b5aa45e64e
-    size: 4666
+  ../.im.will.yml: &ref_1
+    hash: 8d4e5bd07a3e45b09cebc533e3020107
+    size: 4758
 module:
   wMathTransformation.out:
     about:
@@ -19,19 +16,19 @@ module:
       description: ___
       enabled: 1
       version: 0.4.0
-      interpreters:
+      interpreters: &ref_2
         - njs >= 10.0.0
         - chrome >= 60.0.0
         - firefox >= 60.0.0
-      keywords:
+      keywords: &ref_3
         - tools
         - wTools
       license: MIT
       author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors:
+      contributors: &ref_4
         - Kostiantyn Wandalen <wanalen@01.school>
       npm.name: wmathtransformation
-      npm.scripts:
+      npm.scripts: &ref_5
         test: wtest .run proto/**
         docgen: wdocgen .build proto
     path:
@@ -62,7 +59,7 @@ module:
       download:
         criterion:
           predefined: 1
-        path: ../
+        path: ..
       repository:
         path: 'git+https:///github.com/Wandalen/wMathTransformation.git'
       origins:
@@ -139,6 +136,10 @@ module:
           raw: compiled
           content: prime
         path: '{path::out.*=}/source/Index.s'
+      npm.proto.entry:
+        path:
+          - ../proto/wtools/Tools.s
+          - ../proto/node_modules/wmathtransformation
       exported.dir.proto.export:
         criterion:
           generated: 1
@@ -678,24 +679,6 @@ module:
           content: prime
         inherit:
           - files.transpile
-      exported.proto.export:
-        opts:
-          filePath: 'reflector::exported.proto.export'
-        criterion:
-          generated: 1
-          content: proto
-          export: 1
-        inherit:
-          - files.reflect
-      exported.files.proto.export:
-        opts:
-          filePath: 'reflector::exported.files.proto.export'
-        criterion:
-          generated: 1
-          content: proto
-          export: 1
-        inherit:
-          - files.reflect
     build:
       proto.export:
         steps:
@@ -784,9 +767,8 @@ module:
           content: proto
           export: 1
     consistency:
-      wMathTransformation.out.will.yml: *ref_0
-      ../.ex.will.yml: *ref_1
-      ../.im.will.yml: *ref_2
+      ../.ex.will.yml: *ref_0
+      ../.im.will.yml: *ref_1
   ../:
     about:
       name: wMathTransformation
@@ -794,21 +776,13 @@ module:
       description: ___
       enabled: 1
       version: 0.4.0
-      interpreters:
-        - njs >= 10.0.0
-        - chrome >= 60.0.0
-        - firefox >= 60.0.0
-      keywords:
-        - tools
-        - wTools
+      interpreters: *ref_2
+      keywords: *ref_3
       license: MIT
       author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors:
-        - Kostiantyn Wandalen <wanalen@01.school>
+      contributors: *ref_4
       npm.name: wmathtransformation
-      npm.scripts:
-        test: wtest .run proto/**
-        docgen: wdocgen .build proto
+      npm.scripts: *ref_5
     path:
       module.willfiles:
         criterion:
@@ -837,7 +811,7 @@ module:
       download:
         criterion:
           predefined: 1
-        path: ./
+        path: .
       repository:
         path: 'git+https:///github.com/Wandalen/wMathTransformation.git'
       origins:
@@ -914,6 +888,10 @@ module:
           raw: compiled
           content: prime
         path: '{path::out.*=}/source/Index.s'
+      npm.proto.entry:
+        path:
+          - proto/wtools/Tools.s
+          - proto/node_modules/wmathtransformation
     submodule:
       wTools:
         path: 'npm:///wTools'
@@ -1460,6 +1438,5 @@ module:
         hash: 44574774092fe505ab2ee53f354db5c2
         size: 1727
       ../.im.will.yml:
-        hash: 41e8fdb262ab8ce24c3a02b5aa45e64e
-        size: 4666
-      wMathTransformation.out.will.yml: *ref_0
+        hash: 8d4e5bd07a3e45b09cebc533e3020107
+        size: 4758
