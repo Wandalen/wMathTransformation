@@ -1470,6 +1470,4 @@ module:
       ../.im.will.yml:
         hash: 8d4e5bd07a3e45b09cebc533e3020107
         size: 4758
-      wMathTransformation.out.will.yml:
-        hash: 6ff1a59b7dfce24e046fc45c5b1be5c4
-        size: 37461
+      wMathTransformation.out.will.yml: *ref_0
