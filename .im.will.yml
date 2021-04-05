@@ -63,8 +63,8 @@ path:
       raw: compiled
       content: prime
   npm.proto.entry:
-    - /pro/module/wMathTransformation/proto/wtools/Tools.s
-    - /pro/module/wMathTransformation/proto/node_modules/wmathtransformation
+    - proto/wtools/Tools.s
+    - proto/node_modules/wmathtransformation
 reflector:
   reflect.proto:
     inherit: predefined.*
